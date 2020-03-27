@@ -1,0 +1,13 @@
+.slider {
+  width: $width;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider__button {
+  position: absolute;
+  z-index: 2;
+  left: 676px;
+  top: 336px;
+  width: 88px;
+}

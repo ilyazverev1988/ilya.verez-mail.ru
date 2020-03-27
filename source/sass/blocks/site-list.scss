@@ -1,0 +1,41 @@
+.site-list {
+  width: 800px;
+  margin-left: 202px;
+}
+
+.site-list__reference {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  &--basket::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/cart-icon.png");
+    background-repeat: no-repeat;
+    top: 2px;
+    left: -28px;
+  }
+
+  &:hover {
+    color: #fb565a;
+  }
+
+  &:focus,
+  &:active {
+    color: #a7a7a7;
+  }
+
+  &--active {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #fb565a;
+  }
+}
+
+.site-list___logo {
+  pointer-events: none;
+}

@@ -1,0 +1,115 @@
+.add__label {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 46px;
+  position: relative;
+}
+
+.add__item {
+  margin-top: 18px;
+}
+
+.add__input + .add__label::before {
+  position: absolute;
+  content: "";
+  width: 27px;
+  height: 27px;
+  border: 1px solid #cdcdcd;
+  top: -3px;
+  left: 1px;
+}
+
+.add__input:hover + .add__label::before,
+.add__input:focus + .add__label::before {
+  border: 1px solid #bababa;
+}
+
+.add__input:active + .add__label::before {
+  opacity: 0.3;
+}
+
+.add__input:checked + .add__label::after {
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 15px;
+  top: 5px;
+  left: 6px;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg fill='%2368b738' version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 21.1 15.5' style='enable-background:new 0 0 21.1 15.5;' xml:space='preserve'%3E%3Cpolygon points='20.1,0 7.7,13.3 1,6.1 0,7.2 7.6,15.4 7.7,15.5 21,1.2 21.1,1.1 '/%3E%3C/svg%3E");
+}
+
+.add__input:active:checked + .add__label::after {
+  opacity: 0.3;
+}
+
+.add__label:active {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .add {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .add__item {
+    width: 219px;
+    margin-top: 17px;
+    margin-bottom: 31px;
+
+    &:nth-child(2n + 1) {
+      margin-right: 125px;
+      margin-left: 15px;
+    }
+  }
+
+  .add__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .add__input + .add__label::before {
+    width: 39px;
+    height: 39px;
+    top: -5px;
+    left: -12px;
+  }
+
+  .add__input:checked + .add__label::after {
+    top: 8px;
+    left: -2px;
+    width: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add {
+    flex-wrap: nowrap;
+  }
+
+  .add__item:nth-child(2n + 1) {
+    margin: 0 119px 0 0;
+  }
+
+  .add__item {
+    margin: 0 123px 0 0;
+    white-space: nowrap;
+  }
+
+  .add__item:last-child {
+    margin: 0 80px 0 0;
+  }
+
+  .add__input + .add__label::before {
+    top: -4px;
+    left: -12px;
+  }
+
+  .add__input:checked + .add__label::after {
+    top: 8px;
+    left: -2px;
+  }
+}
