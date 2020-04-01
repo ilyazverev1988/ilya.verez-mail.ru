@@ -5,8 +5,8 @@
   <meta charset="utf-8" />
   <title>Фотографии Pink</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!--<link href="css/normalize.css" rel="stylesheet" />-->
-  <link href="css/style1.css" rel="stylesheet" />
+  <link href="css/normalize.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
   <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
 </head>
 
@@ -15,25 +15,31 @@
   <header class="body__header header">
     <nav class="header__nav">
       <div class="header__container">
-        <img class="header__logo" src="" alt="логотип сайта Pink" width="75" height="22">
-        <img class="header__menu" src="" alt="иконка закрыть меню" width="24" height="23">
+        <a class="header__logo-link" href="index.html"><img class="header__logo" src="/img/logo-white-mobile.svg"
+            alt="логотип сайта Pink" width="75" height="22"></a>
+        <a class="header__menu-link" href=""><img class="header__menu" src="/img/menu-close.png"
+            alt="иконка закрыть меню" width="24" height="23"></a>
       </div>
       <ul class="header__nav nav-list">
-        <li class="nav-list__item">Главная</li>
-        <li class="nav-list__item">Фотографии</li>
-        <li class="nav-list__item">Конкурс</li>
-        <li class="nav-list__item">HTML Academy</li>
+        <li class="nav-list__item"><a class="nav-list__link" href="index.html">Главная</a></li>
+        <li class="nav-list__item"><a class="nav-list__link" href="">Фотографии</a></li>
+        <li class="nav-list__item"><a class="nav-list__link" href="form.html">Конкурс</a></li>
+        <li class="nav-list__item"><a class="nav-list__link" href="">HTML Academy</a></li>
       </ul>
     </nav>
   </header>
-  <main class="body__main">
+  <main class="body__photo">
     <section class="body__photos photos">
-      <h1 class="photos__title">Фотографии пользователей</h1>
+      <div class="photos__background">
+        <div class="photos__container">
+          <h1 class="photos__title">Фотографии пользователей</h1>
+        </div>
+      </div>
       <p class="photos__offer">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
       </p>
       <ul class="photos__list list-photo">
         <li class="list-photo__item list-photo__item--panorama">
-          <img class="list-photo__img" src="" alt="вид с вышки" width="320" height="137">
+          <img class="list-photo__img" src="/img/panorama-mobile@1x.jpg" alt="вид с вышки" width="320" height="137">
           <div class="list-photo__container">
             <div class="list-photo__wrap">
               <p class="list-photo__author">Анна</p>
@@ -42,13 +48,13 @@
             <p class="list-photo__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
               трансляцию в перископе, задавайте свои вопросы!</p>
             <div class="list-photo__wrap">
-              <p class="list-photo__like">Нравится: </p>
+              <p class="list-photo__like">Нравится:</p>
               <p class="list-photo__number">215</p>
             </div>
           </div>
         </li>
         <li class="list-photo__item">
-          <img class="list-photo__img" src="" alt="авто" width="280" height="180">
+          <img class="list-photo__img" src="/img/photo-1-mobile@1x.jpg" alt="авто" width="280" height="180">
           <div class="list-photo__container">
             <div class="list-photo__wrap">
               <p class="list-photo__author">Левон</p>
@@ -62,7 +68,8 @@
           </div>
         </li>
         <li class="list-photo__item">
-          <img class="list-photo__img" src="" alt="ударная установка" width="280" height="180">
+          <img class="list-photo__img" src="/img/photo-2-mobile@1x.jpg" alt="ударная установка" width="280"
+            height="180">
           <div class="list-photo__container">
             <div class="list-photo__wrap">
               <p class="list-photo__author">Антон</p>
@@ -76,7 +83,7 @@
           </div>
         </li>
         <li class="list-photo__item">
-          <img class="list-photo__img" src="" alt="вид из окна" width="280" height="180">
+          <img class="list-photo__img" src="/img/photo-3-mobile@1x.jpg" alt="вид из окна" width="280" height="180">
           <div class="list-photo__container">
             <div class="list-photo__wrap">
               <p class="list-photo__author">Борис</p>
@@ -90,7 +97,7 @@
           </div>
         </li>
         <li class="list-photo__item">
-          <img class="list-photo__img" src="" alt="кубанская бахча" width="280" height="180">
+          <img class="list-photo__img" src="/img/photo-4-mobile@1x.jpg" alt="кубанская бахча" width="280" height="180">
           <div class="list-photo__container">
             <div class="list-photo__wrap">
               <p class="list-photo__author">Сергей</p>
@@ -104,7 +111,7 @@
           </div>
         </li>
         <li class="list-photo__item">
-          <img class="list-photo__img" src="" alt="вид с горы" width="280" height="180">
+          <img class="list-photo__img" src="/img/photo-5-mobile@1x.jpg" alt="вид с горы" width="280" height="180">
           <div class="list-photo__container">
             <div class="list-photo__wrap">
               <p class="list-photo__author">Максим</p>
@@ -118,7 +125,7 @@
           </div>
         </li>
         <li class="list-photo__item">
-          <img class="list-photo__img" src="" alt="крыло самолета" width="280" height="180">
+          <img class="list-photo__img" src="/img/photo-6-mobile@1x.jpg" alt="крыло самолета" width="280" height="180">
           <div class="list-photo__container">
             <div class="list-photo__wrap">
               <p class="list-photo__author">Надежда</p>
@@ -135,15 +142,20 @@
       <p class="photos__offer">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
     </section>
     <section class="body__filter filter">
-      <img class="filter__img" src="" alt="зимняя дорога" width="280" height="374">
+      <img class="filter__img" src="/img/photo-editor-mobile@1x.jpg" alt="зимняя дорога" width="280" height="374">
       <ul class="filter__variant variant">
-        <li class="variant__item"><img class="variant__img" src="" alt="обрезка" width="44" height="44"></li>
-        <li class="variant__item"><img class="variant__img" src="" alt="контрастность" width="44" height="44"></li>
-        <li class="variant__item"><img class="variant__img" src="" alt="насыщенность" width="44" height="44"></li>
+        <li class="variant__item"><img class="variant__img" src="/img/crop-icon.svg" alt="обрезка" width="44"
+            height="44">
+        </li>
+        <li class="variant__item"><img class="variant__img" src="/img/fill-icon.svg" alt="заливка" width="48"
+            height="43">
+        </li>
+        <li class="variant__item"><img class="variant__img" src="/img/contrast-icon.svg" alt="контраст" width="32"
+            height="32"></li>
       </ul>
       <div class="filter__container">
         <div class="filter__line"></div>
-        <div class="filter__point"><img class="filter__img-point" src="" alt="ползунок"></div>
+        <img class="filter__img-point" src="/img/slider.png" alt="ползунок">
       </div>
       <div class="filter__container-button">
         <button class="filter__submit">Запостить</button>
@@ -152,19 +164,20 @@
     </section>
   </main>
   <footer class="body__footer footer">
-    <a class="footer__link" href=""><img class="footer__img" src="" alt="логотип pink" width="147" height="40"></a>
+    <a class="footer__link" href=""><img class="footer__img" src="/img/logo-blue-tablet.svg" alt="логотип pink"
+        width="147" height="40"></a>
     <ul class="footer__social-list social-list">
-      <li class="social-list__item"><a class="social-list__link" href=""><img class="social-list__img" src=""
-            alt="ссылка в твиттере" width="18" height="14"></a></li>
-      <li class="social-list__item"><a class="social-list__link" href=""><img class="social-list__img" src=""
-            alt="ссылка в фейсбуке" width="18" height="18"></a></li>
-      <li class="social-list__item"><a class="social-list__link" href=""><img class="social-list__img" src=""
-            alt="ссылка в ютубе" width="15" height="13"></a></li>
+      <li class="social-list__item"><a class="social-list__link" href=""><img class="social-list__img"
+            src="/img/twitter.svg" alt="ссылка в твиттере" width="18" height="14"></a></li>
+      <li class="social-list__item"><a class="social-list__link" href=""><img class="social-list__img"
+            src="/img/facebook.svg" alt="ссылка в фейсбуке" width="9" height="18"></a></li>
+      <li class="social-list__item"><a class="social-list__link" href=""><img class="social-list__img"
+            src="/img/youtube.svg" alt="ссылка в ютубе" width="15" height="13"></a></li>
     </ul>
     <div class="footer__container">
       <p class="footer__academy">Разработано</p>
-      <a class="footer__acadmey-link" href=""><img class="footer__academy-img" src="" alt="логотип HTML академии"
-          width="27" height="34"></a>
+      <a class="footer__acadmey-link" href=""><img class="footer__academy-img" src="/img/htmlacademy.svg"
+          alt="логотип HTML академии" width="27" height="34"></a>
     </div>
   </footer>
 

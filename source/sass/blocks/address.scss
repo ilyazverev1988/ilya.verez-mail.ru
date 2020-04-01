@@ -1,99 +1,24 @@
-.address {
-  background-color: #f2f2f2;
-  position: relative;
-}
-
-.address__container {
+.address__item {
+  margin: 0 8% 28px 8%;
   display: flex;
-  margin: auto;
-  min-height: 114px;
+  flex-direction: column;
 }
 
-.address__invite {
-  color: #111111;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  width: 126px;
-  margin-top: 27px;
-  margin-left: 21px;
-}
-
-.address__address {
-  color: #444444;
-  font-family: $minor-font;
-  font-weight: 400;
+.address__label {
+  color: #d22856;
   font-size: 14px;
-  line-height: 20px;
-  width: 135px;
-  margin-top: 28px;
-  margin-left: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 9px;
 }
 
-.adress__wrap-map {
-  overflow: hidden;
-  position: relative;
-  height: 361px;
-}
-
-.adress__map {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  border: none;
-}
-
-.address__wrap-background {
-  background-color: white;
-}
-
-@media (min-width: $tablet-width) {
-  .address__container {
-    min-height: 201px;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .address__wrap-background {
-    background-color: #f2f2f2;
-  }
-
-  .address__invite {
-    font-size: 20px;
-    line-height: 25px;
-    width: 139px;
-    margin-left: 70px;
-    margin-top: 27px;
-  }
-
-  .address__address {
-    width: 159px;
-    font-size: 16px;
-    margin-top: 1px;
-    margin-right: 72px;
-    text-align: right;
-  }
-
-  .adress__map {
-    height: 400px;
-  }
-
-  .adress__wrap-map {
-    height: 400px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .address__container.width {
-    width: 570px;
-    height: 201px;
-    position: absolute;
-    z-index: 1;
-    background-color: white;
-    top: 130px;
-    left: 5px;
-  }
+.address__input {
+  height: 59px;
+  border: 2px solid #e5e5e5;
+  color: #283645;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  padding-left: 20px;
 }

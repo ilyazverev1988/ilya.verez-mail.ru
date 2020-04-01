@@ -1,0 +1,70 @@
+.list-photo__container {
+  margin: -3px 6% 0;
+  background-color: #f2f2f2;
+  padding-left: 6%;
+  padding-right: 12%;
+}
+
+.list-photo__wrap {
+  padding-top: 25px;
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 28px;
+}
+
+.list-photo__author {
+  color: #283645;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.list-photo__date {
+  font-weight: 300;
+  color: #283645;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.list-photo__comment {
+  color: #283645;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.list-photo__item {
+  margin-bottom: 20px;
+}
+
+.list-photo__like {
+  color: #d22856;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-left: 25px;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 12px;
+    background-image: url("../img/icon-heart.png");
+    top: 6px;
+    left: -23px;
+  }
+}
+
+.list-photo__number {
+  color: #d22856;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}

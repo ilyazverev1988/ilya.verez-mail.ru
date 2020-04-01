@@ -1,0 +1,90 @@
+.form__wrap-checkbox {
+  background-color: #f2f2f2;
+}
+
+.form__crazy-trip {
+  color: #d22856;
+  margin: 0 auto 42px auto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-top: 41px;
+  width: 75%;
+  text-align: center;
+}
+
+.form__address {
+  margin-top: 41px;
+}
+
+.form__wrap-radio {
+  margin-top: 44px;
+  background-color: #f2f2f2;
+}
+
+.form__os {
+  text-align: center;
+  color: #d22856;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-top: 41px;
+  width: 57%;
+  margin: 0 auto 50px auto;
+}
+
+.form__label-area {
+  color: #d22856;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+}
+
+.form__wrap-area {
+  margin-top: 41px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__area {
+  color: #283645;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 84%;
+  padding: 23px 28px 0 19px;
+  height: 197px;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+}
+
+.form__submit {
+  width: 84%;
+  height: 59px;
+  border: 2px solid #2aab6d;
+  background-color: #2aab6d;
+  margin-top: 52px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.form__necessarily {
+  margin-top: 46px;
+  color: #283645;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.form__span {
+  color: #d22856;
+}
