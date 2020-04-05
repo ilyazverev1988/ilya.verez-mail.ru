@@ -28,12 +28,13 @@
     justify-content: space-between;
     align-items: baseline;
     min-height: 127px;
-    margin: 0px 4%;
+    margin: 0 4%;
   }
 
   .footer__img {
     width: 147px;
     height: 40px;
+    margin-top: 36px;
   }
 
   .footer__container {
@@ -44,9 +45,5 @@
   .footer__social-list {
     margin: 0;
     width: 33%;
-  }
-
-  .footer__img {
-    margin-top: 36px;
   }
 }
