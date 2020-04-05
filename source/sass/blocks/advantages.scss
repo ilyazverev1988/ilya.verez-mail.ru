@@ -44,11 +44,16 @@
   height: 284px;
 }
 
+.advantages__phone--hidden {
+  display: none;
+}
+
 @media (min-width: $tabletWidth) {
   .advantages__question {
     color: #283645;
     font-size: 40px;
     font-weight: 300;
+    margin-top: 59px;
   }
 
   .advantages__answer {
@@ -84,5 +89,69 @@
     text-align: left;
     margin-top: 63px;
     padding: 0;
+  }
+
+  .advantages__phone {
+    &--hidden {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .advantages__question {
+    color: #283645;
+    font-size: 50px;
+    font-weight: 300;
+    margin-top: 0;
+    padding-top: 78px;
+    background-color: white;
+  }
+
+  .advantages__answer {
+    color: #283645;
+    font-size: 50px;
+    font-weight: 300;
+    width: 60%;
+  }
+
+  .advantages__help-list {
+    flex-direction: row;
+    display: flex;
+    margin: 69px auto;
+    width: 802px;
+  }
+
+  .advantages__container {
+    background-color: white;
+  }
+
+  .advantages__wrap-img {
+    margin: 0 auto;
+    display: flex;
+    width: 1200px;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+  }
+
+  .advantages__phone {
+    &--hidden {
+      display: initial;
+      min-height: 302px;
+    }
+  }
+
+  .advantages__wrap {
+    justify-content: center;
+    display: flex;
+    flex-direction: column-reverse;
+
+    &::before {
+      top: 12%;
+      transform: rotate(-3deg);
+      width: 200%;
+      height: 400%;
+    }
   }
 }

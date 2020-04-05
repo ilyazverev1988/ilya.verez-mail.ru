@@ -4,9 +4,7 @@
 
 @media (min-width: $tabletWidth) {
   .time {
-    display: flex;
-    margin: 59px auto 0;
-    width: 95%;
+    display: block;
   }
 
   .time__title {
@@ -17,11 +15,11 @@
   }
 
   .time__word {
-    line-height: 24px;
-    font-size: 19px;
+    line-height: 28px;
+    font-size: 15px;
     font-weight: 400;
     margin-top: 30px;
-    width: 96%;
+    width: 109%;
   }
 
   .time__link {
@@ -34,6 +32,44 @@
   }
 
   .time__wrap {
-    margin-left: 65px;
+    margin-left: 52px;
+    width: 52%;
+  }
+
+  .time__container {
+    display: flex;
+    margin: 59px auto 0;
+    width: 95%;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .time {
+    background-color: #f2f2f2;
+    width: 100%;
+    margin-top: 0;
+    padding-bottom: 67px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .time__container {
+    margin: 0 13%;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .time__wrap {
+    width: 525px;
+  }
+
+  .time__word {
+    line-height: 35px;
+    width: 111%;
+  }
+
+  .time__title {
+    margin-top: 74px;
   }
 }

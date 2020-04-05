@@ -36,3 +36,25 @@
     width: 104%;
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .help-list__item {
+    margin: 0 90px 0 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .help-list__heading {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    width: 122%;
+  }
+
+  .help-list__detail {
+    text-align: center;
+  }
+}

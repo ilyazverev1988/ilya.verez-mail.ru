@@ -156,3 +156,62 @@
     border-right: 2px solid #e5e5e5;
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .price__wrap-table {
+    padding-top: 84px;
+
+    &::before {
+      top: 12%;
+      transform: rotate(-3deg);
+      width: 200%;
+      height: 400%;
+    }
+  }
+
+  .price__heading-th {
+    width: 233px;
+    height: 94px;
+  }
+
+  .price__availability {
+    width: 233px;
+    height: 59px;
+
+    &--left {
+      align-items: flex-start;
+      padding-left: 47px;
+    }
+  }
+
+  .price__heading-tablet {
+    width: 233px;
+    height: 94px;
+  }
+
+  .price__name {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-top: 0;
+  }
+
+  .price__number {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  .price__tablet {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .price__table {
+    margin-bottom: 98px;
+  }
+}

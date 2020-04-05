@@ -21,3 +21,32 @@
   font-weight: 400;
   line-height: 18px;
 }
+
+@media (min-width: $tabletWidth) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    min-height: 127px;
+    margin: 0px 4%;
+  }
+
+  .footer__img {
+    width: 147px;
+    height: 40px;
+  }
+
+  .footer__container {
+    margin: 0;
+    width: 128px;
+  }
+
+  .footer__social-list {
+    margin: 0;
+    width: 33%;
+  }
+
+  .footer__img {
+    margin-top: 36px;
+  }
+}

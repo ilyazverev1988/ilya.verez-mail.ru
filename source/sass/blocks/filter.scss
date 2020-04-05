@@ -11,6 +11,7 @@
   margin: 42px 20% 45px 16%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .filter__line {
@@ -28,7 +29,8 @@
 .filter__img-point {
   position: absolute;
   top: -6px;
-  left: 229px;
+  left: 50%;
+  margin-left: 59px;
 }
 
 .filter__submit {
@@ -50,4 +52,44 @@
   border-radius: 30px;
   margin-bottom: 41px;
   background-color: white;
+}
+
+@media (min-width: $tabletWidth) {
+  .filter {
+    justify-content: space-around;
+  }
+
+  .filter__container {
+    display: none;
+  }
+
+  .filter__img {
+    margin-top: 57px;
+    margin-bottom: 54px;
+    margin-left: 23px;
+    width: 100%;
+  }
+
+  .filter__wrap-tablet {
+    width: 50%;
+    margin-left: 48px;
+    margin-top: 66px;
+  }
+
+  .filter__background-tablet {
+    display: flex;
+    min-height: 511px;
+    width: $tabletWidth;
+    margin: 0 auto;
+  }
+
+  .filter__variant {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filter__container-button {
+    margin-top: 79px;
+  }
 }
