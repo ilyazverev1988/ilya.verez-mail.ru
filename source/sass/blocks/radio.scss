@@ -41,3 +41,19 @@
   top: 8px;
   left: -50px;
 }
+
+@media (min-width: $tabletWidth) {
+  .radio {
+    min-height: 295px;
+    box-sizing: border-box;
+    padding: 53px 20px 56px 60px;
+  }
+
+  .radio__item {
+    margin: 0 0 39px 0;
+
+    &:last-child {
+      padding: 0;
+    }
+  }
+}

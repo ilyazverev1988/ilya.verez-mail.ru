@@ -32,3 +32,19 @@
   line-height: 30px;
   margin: 54px 8% 49px 8%;
 }
+
+@media (min-width: $tabletWidth) {
+  .introduction__bonus {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 100px 14% 76px 14%;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .introduction__bonus {
+    margin: 100px auto 77px;
+    width: 64%;
+  }
+}

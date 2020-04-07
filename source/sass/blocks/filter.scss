@@ -93,3 +93,44 @@
     margin-top: 79px;
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .filter {
+    width: 940px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .filter__background-tablet {
+    width: auto;
+    min-height: 514px;
+    padding: 0 90px 0 80px;
+  }
+
+  .filter__img {
+    margin-left: 0;
+    margin-bottom: 57px;
+  }
+
+  .filter__wrap-tablet {
+    width: 383px;
+    margin-left: 80px;
+  }
+
+  .filter__submit {
+    width: 183px;
+    height: 55px;
+    margin-right: 44px;
+  }
+
+  .filter__cancel {
+    width: 183px;
+    height: 55px;
+  }
+
+  .filter__container-button {
+    margin-top: 103px;
+    margin-left: -18px;
+    width: 415px;
+  }
+}

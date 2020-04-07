@@ -34,3 +34,12 @@
     width: 67%;
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .photos__offer {
+    width: 53%;
+    margin-top: 68px;
+    margin-bottom: 69px;
+    padding: 0;
+  }
+}

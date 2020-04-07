@@ -59,7 +59,7 @@
   .header-photo__title {
     font-size: 40px;
     font-weight: 300;
-    width: 47%;
+    width: 59%;
     margin: 81px auto 0;
     line-height: 47px;
   }
@@ -78,10 +78,14 @@
     color: #ffffff;
     font-size: 50px;
     font-weight: 300;
-    width: 280px;
     line-height: 75px;
-    margin-top: 132px;
-    margin-left: 215px;
+    margin: 74px auto 0;
+    height: auto;
+
+    &--form {
+      width: 747px;
+      margin-top: 52px;
+    }
   }
 
   .header-photo__nav-list {
@@ -131,8 +135,8 @@
     text-align: center;
     background-image: url("../img/back-desktop.png");
     background-size: 2560px auto;
-    background-position: bottom;
-    min-height: 853px;
+    background-position: top;
+    height: 395px;
   }
 
   .header-photo__width {

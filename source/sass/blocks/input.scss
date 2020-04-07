@@ -23,3 +23,25 @@
   border: 2px solid #e5e5e5;
   padding-left: 20px;
 }
+
+@media (min-width: $tabletWidth) {
+  .input__item {
+    flex-direction: row;
+    margin: 0 22px 56px 20px;
+    align-items: center;
+  }
+
+  .input__input-label {
+    margin: 0 22px 0 0;
+  }
+
+  .input__input {
+    width: 90%;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .input__item {
+    margin: 0 0 56px 0;
+  }
+}

@@ -14,30 +14,36 @@
 
 <body class="body">
 
-  <header class="body__header header">
-    <nav class="header__nav">
-      <div class="header__container">
-        <a class="header__logo-link" href="index.html"><img class="header__logo" src="/img/logo-white-mobile.svg"
-            alt="логотип сайта Pink"></a>
-        <a class="header__menu-link" href=""><img class="header__menu" src="/img/menu-close.png"
-            alt="иконка закрыть меню" width="24" height="23"></a>
+  <header class="body__header-photo header-photo">
+    <div class="header-photo__wrap">
+      <div class="header-photo__wrap-desk">
+        <nav class="header-photo__nav">
+          <div class="header__container">
+            <a class="header-photo__logo-link" href="">
+              <picture>
+                <source media="(min-width:1200px)" srcset="img/logo-white-desktop.svg">
+                <source media="(min-width:660px)" srcset="img/logo-white-tablet.svg">
+                <img class="header-photo__logo" src="/img/logo-white-mobile.svg" alt="логотип сайта Pink">
+              </picture>
+            </a>
+            <a class="header-photo__menu-link" href=""><img class="header__menu" src="/img/menu-burger.svg"
+                alt="иконка закрыть меню" width="50" height="24"></a>
+          </div>
+          <ul class="header-photo__nav-list nav-list">
+            <li class="nav-list__item"><a class="nav-list__link" href="index.html">Главная</a></li>
+            <li class="nav-list__item"><a class="nav-list__link" href="photo.html">Фотографии</a></li>
+            <li class="nav-list__item"><a class="nav-list__link" href="">Конкурс</a></li>
+            <li class="nav-list__item"><a class="nav-list__link" href="">HTML Academy</a></li>
+          </ul>
+        </nav>
       </div>
-      <ul class="header__nav nav-list">
-        <li class="nav-list__item"><a class="nav-list__link" href="index.html">Главная</a></li>
-        <li class="nav-list__item"><a class="nav-list__link" href="photo.html">Фотографии</a></li>
-        <li class="nav-list__item"><a class="nav-list__link" href="">Конкурс</a></li>
-        <li class="nav-list__item"><a class="nav-list__link" href="">HTML Academy</a></li>
-      </ul>
-    </nav>
+      <div class="header-photo__width">
+        <h1 class="header-photo__title header-photo__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
   </header>
 
   <main class="body__main-form">
     <section class="body__introduction introduction">
-      <div class="introduction__background">
-        <div class="introduction__container">
-          <h1 class="introduction__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-        </div>
-      </div>
       <p class="introduction__bonus">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
         вашу
         бонусную карту!</p>
@@ -57,8 +63,40 @@
           <input class="input__input" type="text" id="patronymic" placeholder="Ну и отчество тоже">
         </li>
       </ul>
-      <div class="form__wrap-checkbox">
-        <p class="form__crazy-trip">Ваши безбашенные достижения в путешествии</p>
+      <div class="form__wrap-radio">
+        <fieldset class="form__fieldset-radio">
+          <legend class="form__os">С каким приложением путешествовали?</legend>
+          <ul class="form__radio radio">
+            <li class="radio__item">
+              <input class="radio__input visually-hidden" type="radio" id="iOS" name="os" value="iOS" checked />
+              <label class="radio__label" for="iOS">Pink для iOS</label>
+            </li>
+            <li class="radio__item">
+              <input class="radio__input visually-hidden" type="radio" id="android" name="os" value="android" checked />
+              <label class="radio__label" for="android">Pink на Android</label>
+            </li>
+            <li class="radio__item">
+              <input class="radio__input visually-hidden" type="radio" id="windows" name="os" value="windows" />
+              <label class="radio__label" for="windows">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <fieldset class="form__adress-fildset">
+        <legend class="form__adress-legeng">Контактная информация</legend>
+        <ul class="form__address address">
+          <li class="address__item">
+            <label class="address__label address__label--telephone" for="telephone">Номер телефона</label>
+            <input class="address__input" type="text" placeholder="Номер, пожалуйста">
+          </li>
+          <li class="address__item">
+            <label class="address__label address__label--mail" for="mail">адрес почты</label>
+            <input class="address__input" type="text" placeholder="Введите почту *">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__wrap-checkbox">
+        <legend class="form__crazy-trip">Ваши безбашенные достижения в путешествии</legend>
         <ul class="form__progress progress">
           <li class="progress__item">
             <input class="progress__input visually-hidden" type="checkbox" id="selfi" value="selfi" name="selfi"
@@ -89,40 +127,16 @@
             <label class="progress__label" for="hotel">Разгромил отель</label>
           </li>
         </ul>
-      </div>
-      <ul class="form__address address">
-        <li class="address__item">
-          <label class="address__label" for="telephone">Номер телефона</label>
-          <input class="address__input" type="text" placeholder="Номер, пожалуйста">
-        </li>
-        <li class="address__item">
-          <label class="address__label" for="mail">адрес почты</label>
-          <input class="address__input" type="text" placeholder="Введите почту *">
-        </li>
-      </ul>
-      <div class="form__wrap-radio">
-        <p class="form__os">С каким приложением путешествовали?</p>
-        <ul class="form__radio radio">
-          <li class="radio__item">
-            <input class="radio__input visually-hidden" type="radio" id="iOS" name="os" value="iOS" checked />
-            <label class="radio__label" for="iOS">Pink для iOS</label>
-          </li>
-          <li class="radio__item">
-            <input class="radio__input visually-hidden" type="radio" id="android" name="os" value="android" />
-            <label class="radio__label" for="android">Pink на Android</label>
-          </li>
-          <li class="radio__item">
-            <input class="radio__input visually-hidden" type="radio" id="windows" name="os" value="windows" />
-            <label class="radio__label" for="windows">Резиновая</label>
-          </li>
-        </ul>
-      </div>
-      <div class="form__wrap-area">
-        <label class="form__label-area" for="area">Опишите свои эмоции</label>
+      </fieldset>
+      <fieldset class="form__wrap-area">
+        <legend class="form__label-area" for="area">Опишите свои эмоции</legend>
         <textarea class="form__area" name="area" id="area"
           placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </fieldset>
+      <div class="form__wrap-submit">
         <button class="form__submit" type="submit">Отправить форму</button>
         <p class="form__necessarily"><span class="form__span">* </span>— обязательные поля</p>
+        <p class="form__necessarily-desktop"><span class="form__span">* </span>— обязательные для заполнения поля</p>
       </div>
     </form>
   </main>

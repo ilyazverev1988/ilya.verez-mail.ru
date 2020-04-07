@@ -67,3 +67,54 @@
     display: block;
   }
 }
+
+@media (min-width: $desktopWidth) {
+  .variant__img {
+    color: red;
+    margin-right: 48px;
+    min-width: 48px;
+
+    &--crop {
+      width: 44px;
+      height: 44px;
+    }
+
+    &--fill {
+      width: 48px;
+      height: 43px;
+    }
+
+    &--contrast {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .variant__line {
+    width: 288px;
+  }
+
+  .variant__img-point {
+    top: 15px;
+
+    &--crop {
+      margin-left: -45px;
+    }
+
+    &--fill {
+      margin-left: 145px;
+    }
+
+    &--contrast {
+      top: 9px;
+    }
+  }
+
+  .variant__item {
+    padding-bottom: 13px;
+
+    &:last-child {
+      border-bottom: 1px solid #dedfe1;
+    }
+  }
+}
