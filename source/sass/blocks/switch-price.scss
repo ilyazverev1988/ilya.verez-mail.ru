@@ -1,0 +1,41 @@
+.switch-price {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  background-color: #f2f2f2;
+}
+
+.switch-price__item {
+  width: 6px;
+  height: 6px;
+  top: -28px;
+  background-color: rgba(40, 54, 69, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+
+  &--check {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 3px black;
+    z-index: 3;
+    background-color: white;
+  }
+
+  &:nth-child(1) {
+    margin-right: 19px;
+  }
+
+  &:nth-child(2) {
+    margin-right: 19px;
+  }
+}
+
+@media (min-width: $tabletWidth) {
+  .switch-price {
+    display: none;
+  }
+}

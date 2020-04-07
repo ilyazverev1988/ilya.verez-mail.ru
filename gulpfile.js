@@ -7,12 +7,14 @@ var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var wait = require("gulp-wait");
 
 gulp.task("css", function() {
   return gulp
     .src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
+    .pipe(wait(1000))
     .pipe(sass())
     .pipe(postcss([autoprefixer()]))
     .pipe(sourcemap.write("."))

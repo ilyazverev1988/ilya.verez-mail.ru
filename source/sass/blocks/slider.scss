@@ -1,13 +1,105 @@
-.slider {
-  width: $width;
-  margin: 0 auto;
-  position: relative;
+.slider__slide {
+  text-align: center;
+  margin: 49px 6% 0 6%;
 }
 
-.slider__button {
-  position: absolute;
-  z-index: 2;
-  left: 676px;
-  top: 336px;
-  width: 88px;
+.slider__previous,
+.slider__next {
+  display: none;
+}
+
+.slider__name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.slider__message {
+  color: #283645;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.slider__switch {
+  margin-top: 42px;
+}
+
+.slider__about {
+  display: none;
+}
+
+@media (min-width: $tabletWidth) {
+  .slider__slide {
+    margin-top: 106px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .slider__message {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    width: 104%;
+  }
+
+  .slider__name {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-top: 44px;
+  }
+
+  .slider__about {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    display: block;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .slider {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 115px;
+      height: 91px;
+      background-image: url("../img/quotes.svg");
+      top: 52px;
+      left: 550px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .slider__slide {
+    margin: 193px 0 17px;
+    align-items: center;
+    width: 78%;
+  }
+
+  .slider__message {
+    width: 74%;
+    text-align: center;
+  }
+
+  .slider__previous {
+    display: block;
+    margin-left: 125px;
+    cursor: pointer;
+  }
+
+  .slider__next {
+    display: block;
+    margin-right: 125px;
+    cursor: pointer;
+  }
 }

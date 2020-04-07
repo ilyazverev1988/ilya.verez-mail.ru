@@ -1,0 +1,146 @@
+.header-photo {
+  background-color: #283645;
+  text-align: center;
+  background-image: url("../img/background-mobile@1x.jpg");
+  background-size: 700px auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 233px;
+}
+
+.header-photo__nav-list {
+  display: none;
+}
+
+.header-photo__container {
+  padding-top: 22px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 1px 0 #000000, inset 0 -1px 0 0 rgba(255, 255, 255, 0.15);
+  align-items: baseline;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header-photo__nav {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-photo__logo-link {
+  pointer-events: none;
+  margin-left: 20px;
+}
+
+.header-photo__menu-link {
+  margin-right: 19px;
+}
+
+.header-photo__title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  width: 87%;
+  margin: 29px auto -2px;
+  line-height: 30px;
+  height: 369px;
+}
+
+@media (min-width: $tabletWidth) {
+  .header-photo {
+    background-color: #283645;
+    text-align: center;
+    background-image: url("../img/background-tablet@1x.jpg");
+    background-size: 1200px auto;
+    background-position: top;
+    height: 440px;
+  }
+
+  .header-photo__title {
+    font-size: 40px;
+    font-weight: 300;
+    width: 59%;
+    margin: 81px auto 0;
+    line-height: 47px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .header-photo__wrap {
+    height: 89px;
+  }
+
+  .header-photo__menu-link {
+    display: none;
+  }
+
+  .header-photo__title {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 75px;
+    margin: 74px auto 0;
+    height: auto;
+
+    &--form {
+      width: 747px;
+      margin-top: 52px;
+    }
+  }
+
+  .header-photo__nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    margin-left: 173px;
+  }
+
+  .header-photo__container {
+    box-shadow: none;
+    padding: 0;
+    width: 224px;
+    background-color: transparent;
+  }
+
+  .header-photo__nav {
+    display: flex;
+    align-items: baseline;
+    margin: 0 10%;
+    min-height: 89px;
+    padding-top: 27px;
+    width: 942px;
+    margin-left: 129px;
+    margin-right: 129px;
+  }
+
+  .header-photo__background {
+    width: $desktopWidth;
+    margin: 0 auto;
+  }
+
+  .header-photo__logo-link {
+    margin: 0;
+  }
+
+  .header-photo__wrap-desk {
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-photo {
+    background-color: #283645;
+    text-align: center;
+    background-image: url("../img/back-desktop.png");
+    background-size: 2560px auto;
+    background-position: top;
+    height: 395px;
+  }
+
+  .header-photo__width {
+    width: $desktopWidth;
+    margin: 0 auto;
+  }
+}

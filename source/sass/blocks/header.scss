@@ -1,45 +1,178 @@
 .header {
-  display: flex;
-  width: 1160px;
-  justify-content: space-around;
-  margin: 0 auto;
-  flex-direction: column;
+  background-color: #283645;
+  text-align: center;
+  background-image: url("../img/background-mobile@1x.jpg");
+  background-size: 700px auto;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/iphone-hand-mobile.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 258px;
+    height: 286px;
+    top: 184px;
+    margin-left: -125px;
+  }
 }
 
-.header__list {
+.header__nav-list {
+  display: none;
+}
+
+.header__container {
+  padding-top: 22px;
+  padding-bottom: 25px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 49px;
+  box-shadow: 0 1px 0 #000000, inset 0 -1px 0 0 rgba(255, 255, 255, 0.15);
+  align-items: baseline;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header__nav {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header__logo-link {
+  pointer-events: none;
+  margin-left: 20px;
+}
+
+.header__menu-link {
+  margin-right: 19px;
 }
 
 .header__title {
-  font-size: 55px;
-  font-weight: 500;
-  line-height: 55px;
-  text-align: center;
-  margin-top: 82px;
-  margin-bottom: 116px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  width: 87%;
+  margin: 29px auto -2px;
+  line-height: 30px;
+  height: 369px;
 }
 
-.header__wrap {
-  display: flex;
-  width: 1160px;
-  justify-content: space-around;
-  margin-top: 49px;
+@media (min-width: $tabletWidth) {
+  .header {
+    background-color: #283645;
+    text-align: center;
+    background-image: url("../img/background-tablet@1x.jpg");
+    background-size: 1200px auto;
+    background-position: bottom;
+    min-height: 733px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/iphone-hand-tablet@1x.png");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      width: 700px;
+      height: 545px;
+      top: 188px;
+      right: -23px;
+    }
+  }
+
+  .header__title {
+    font-size: 40px;
+    font-weight: 300;
+    width: 36%;
+    margin-left: 61px;
+    margin-top: 126px;
+    line-height: 47px;
+  }
 }
 
-.header__link {
-  &:hover {
-    opacity: 0.8;
+@media (min-width: $desktopWidth) {
+  .header__wrap {
+    height: 89px;
   }
 
-  &:focus,
-  &:active {
-    opacity: 0.3;
+  .header__menu-link {
+    display: none;
   }
 
-  &--disable {
-    pointer-events: none;
+  .header__title {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 300;
+    width: 280px;
+    line-height: 75px;
+    margin-top: 132px;
+    margin-left: 215px;
+  }
+
+  .header__nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    margin-left: 173px;
+  }
+
+  .header__container {
+    box-shadow: none;
+    padding: 0;
+    width: 224px;
+    background-color: transparent;
+  }
+
+  .header__nav {
+    display: flex;
+    align-items: baseline;
+    margin: 0 10%;
+    min-height: 89px;
+    padding-top: 27px;
+    width: 942px;
+    margin-left: 129px;
+    margin-right: 129px;
+  }
+
+  .header__background {
+    width: $desktopWidth;
+    margin: 0 auto;
+  }
+
+  .header__logo-link {
+    margin: 0;
+  }
+
+  .header__wrap-desk {
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header {
+    background-color: #283645;
+    text-align: center;
+    background-image: url("../img/back-desktop.png");
+    background-size: 2560px auto;
+    background-position: bottom;
+    min-height: 853px;
+
+    &::before {
+      background-image: url("../img/iphone-hand-desktop@1x.png");
+      width: 1050px;
+      height: 645px;
+      top: 208px;
+      right: -2px;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      margin-left: -405px;
+      left: 50%;
+    }
+  }
+
+  .header__width {
+    width: $desktopWidth;
+    margin: 0 auto;
   }
 }
