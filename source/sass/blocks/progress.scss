@@ -23,6 +23,16 @@
     top: -5px;
     left: -62px;
   }
+
+  &:hover::before,
+  &:focus::before {
+    border: 2px solid #283645;
+    transition: 0.3s;
+  }
+
+  &:active::before {
+    border: 2px solid #d22856;
+  }
 }
 
 .progress__input:checked + .progress__label::after {
@@ -55,7 +65,7 @@
 
   .progress__item {
     margin: 0;
-    min-width: 255px;
+    min-width: 31%;
 
     &:nth-child(2) {
       order: 4;
@@ -84,5 +94,6 @@
 
   .progress__label {
     width: 200px;
+    margin-left: 68px;
   }
 }

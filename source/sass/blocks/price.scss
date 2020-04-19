@@ -46,6 +46,10 @@
   width: 276px;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
+
+  &:first-child {
+    display: none;
+  }
 }
 
 .price__mobile {
@@ -74,6 +78,7 @@
   width: 276px;
   height: 94px;
   box-sizing: border-box;
+  position: relative;
 
   &:nth-child(1) {
     border-left: 2px solid #e5e5e5;
@@ -87,11 +92,24 @@
   &:nth-child(3) {
     border-right: 2px solid #e5e5e5;
   }
+
+  &--hit::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/flag_hit.png");
+    width: 74px;
+    height: 73px;
+    top: 0;
+    left: -2px;
+  }
 }
 
 .price__table {
-  margin: 100px auto 0 auto;
+  margin: 100px auto 0 -158px;
   transform: translateX(-259px);
+  position: relative;
+  top: -2px;
+  left: 50%;
 }
 
 @media (min-width: $tabletWidth) {
@@ -121,22 +139,41 @@
     text-transform: uppercase;
   }
 
-  .price__heading-th,
+  .price__heading-th {
+    width: 152px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &::before {
+      width: 61px;
+      height: 61px;
+      background-image: url("../img/hit-tablet.png");
+    }
+  }
+
   .price__availability {
     width: 152px;
     height: 45px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-  }
 
-  .price__mobile {
-    display: none;
+    &:first-child {
+      display: block;
+    }
+
+    .price__mobile {
+      display: none;
+    }
   }
 
   .price__table {
     transform: none;
     margin: 44px auto 70px auto;
+    top: 0;
+    left: 0;
   }
 
   .price__tablet {

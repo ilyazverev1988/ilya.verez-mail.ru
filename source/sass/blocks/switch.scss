@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
+  height: 12px;
 }
 
 .switch__item {
@@ -21,6 +22,7 @@
     box-shadow: inset 0 0 0 3px black;
     z-index: 3;
     background-color: white;
+    pointer-events: none;
   }
 
   &:nth-child(1) {
@@ -29,6 +31,19 @@
 
   &:nth-child(2) {
     margin-right: 19px;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: #283645;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+
+  &:active {
+    background-color: #283645;
+    opacity: 0.1;
+    transition: 0.3s;
   }
 }
 

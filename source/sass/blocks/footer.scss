@@ -1,5 +1,9 @@
 .footer__img {
   margin-top: 40px;
+
+  &--desktop {
+    display: none;
+  }
 }
 
 .footer__social-list {
@@ -22,6 +26,26 @@
   line-height: 18px;
 }
 
+.footer-index__link-add--inactive {
+  pointer-events: none;
+}
+
+.footer__academy-img {
+  fill: #d22856;
+
+  &:hover,
+  &:focus {
+    fill: black;
+    transition: 0.3s;
+  }
+
+  &:active {
+    fill: black;
+    opacity: 0.3;
+    transition: 0.3s;
+  }
+}
+
 @media (min-width: $tabletWidth) {
   .footer {
     display: flex;
@@ -35,6 +59,21 @@
     width: 147px;
     height: 40px;
     margin-top: 36px;
+
+    &:hover,
+    &:focus {
+      fill: #d22856;
+      transition: 0.3s;
+    }
+
+    &:active {
+      transition: 0.3s;
+      opacity: 0.3;
+    }
+
+    &--desktop {
+      display: none;
+    }
   }
 
   .footer__container {
@@ -51,6 +90,22 @@
 @media (min-width: $desktopWidth) {
   .footer__img {
     margin: 0;
+    display: none;
+
+    &:hover,
+    &:focus {
+      fill: #d22856;
+      transition: 0.3s;
+    }
+
+    &:active {
+      transition: 0.3s;
+      opacity: 0.3;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 
   .footer {
@@ -62,5 +117,31 @@
 
   .footer__social-list {
     width: 20%;
+  }
+
+  .footer-index__link {
+    &--mail:hover,
+    &--mail:focus {
+      color: #283645;
+      border-bottom: 1px solid #283645;
+    }
+
+    &--mail:active {
+      opacity: 0.3;
+      color: #283645;
+      border: none;
+    }
+
+    &--telephone:hover,
+    &--telephone:focus {
+      color: #283645;
+      border-bottom: 1px solid #283645;
+    }
+
+    &--telephone:active {
+      opacity: 0.3;
+      color: #283645;
+      border: none;
+    }
   }
 }

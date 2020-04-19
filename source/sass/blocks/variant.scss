@@ -1,10 +1,131 @@
-.variant__container {
+.variant__input {
   display: none;
+}
+
+.variant__common {
+  width: 71%;
+  margin-bottom: 73px;
+  appearance: none;
+  outline: none;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+
+  &:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  }
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    transform: translateY(-6px);
+    background-color: #f2f2f2;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      outline: none;
+      background-color: #d22856;
+    }
+  }
+
+  /* All the same stuff for Firefox */
+  &::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+
+    &:active {
+      outline: none;
+      background-color: #d22856;
+    }
+  }
+
+  /* All the same stuff for IE */
+  &::-ms-thumb {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:active {
+      outline: none;
+      background-color: #d22856;
+    }
+  }
+
+  &::-webkit-slider-runnable-track {
+    width: 71%;
+    height: 2px;
+    background-color: black;
+    outline: none;
+  }
+
+  &::-moz-range-track {
+    width: 71%;
+    height: 2px;
+    background-color: black;
+    outline: none;
+  }
+
+  &::-ms-track {
+    width: 71%;
+    height: 2px;
+    background-color: black;
+    outline: none;
+  }
+
+  &::-ms-fill-lower {
+    width: 71%;
+    height: 2px;
+    background-color: black;
+    outline: none;
+  }
+
+  &::-ms-fill-upper {
+    width: 71%;
+    height: 2px;
+    background-color: black;
+    outline: none;
+  }
+}
+
+.variant__img {
+  fill: rgba(40, 54, 69, 0.3);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: rgba(40, 54, 69, 0.5);
+    transition: 0.3s;
+  }
+
+  &:active {
+    fill: #d22856;
+    transition: 0.3s;
+  }
+
+  &--active {
+    fill: #d22856;
+    pointer-events: none;
+  }
 }
 
 @media (min-width: $tabletWidth) {
   .variant__img {
-    color: red;
+    fill: #d22856;
+    pointer-events: none;
     margin-right: 51px;
     min-width: 24px;
 
@@ -33,38 +154,138 @@
   .variant__item {
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     border-bottom: 1px solid #dedfe1;
     padding-bottom: 23px;
     margin-bottom: 21px;
+    width: 100%;
+
+    &--crop {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--fill {
+      width: 24px;
+      height: 22px;
+    }
+
+    &--contrast {
+      width: 16px;
+      height: 16px;
+    }
 
     &:last-child {
       border-bottom: none;
     }
   }
 
-  .variant__img-point {
-    position: absolute;
-    left: 50%;
-    top: 4px;
-
-    &--crop {
-      margin-left: 85px;
-    }
-
-    &--fill {
-      margin-left: -35px;
-    }
-
-    &--contrast {
-      margin-left: 24px;
-      top: 1px;
-    }
-  }
-
   .variant__container {
     display: block;
+  }
+
+  .variant__common {
+    display: none;
+  }
+
+  .variant__input {
+    display: block;
+    width: 200px;
+    appearance: none;
+    outline: none;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+
+    &:focus {
+      outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+    }
+
+    &::-webkit-slider-thumb {
+      appearance: none;
+      width: 14px;
+      height: 14px;
+      border: 2px solid #d22856;
+      border-radius: 50%;
+      cursor: pointer;
+      outline: none;
+      transform: translateY(-6px);
+      background-color: #f2f2f2;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:active {
+        outline: none;
+        background-color: #d22856;
+      }
+    }
+
+    /* All the same stuff for Firefox */
+    &::-moz-range-thumb {
+      width: 14px;
+      height: 14px;
+      border: 2px solid #d22856;
+      border-radius: 50%;
+      cursor: pointer;
+      outline: none;
+
+      &:active {
+        outline: none;
+        background-color: #d22856;
+      }
+    }
+
+    /* All the same stuff for IE */
+    &::-ms-thumb {
+      width: 14px;
+      height: 14px;
+      border: 2px solid #d22856;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:active {
+        outline: none;
+        background-color: #d22856;
+      }
+    }
+
+    &::-webkit-slider-runnable-track {
+      width: 71%;
+      height: 2px;
+      background-color: black;
+      outline: none;
+    }
+
+    &::-moz-range-track {
+      width: 71%;
+      height: 2px;
+      background-color: black;
+      outline: none;
+    }
+
+    &::-ms-track {
+      width: 71%;
+      height: 2px;
+      background-color: black;
+      outline: none;
+    }
+
+    &::-ms-fill-lower {
+      width: 71%;
+      height: 2px;
+      background-color: black;
+      outline: none;
+    }
+
+    &::-ms-fill-upper {
+      width: 71%;
+      height: 2px;
+      background-color: black;
+      outline: none;
+    }
   }
 }
 

@@ -2,250 +2,314 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8"/>
   <title>Pink</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="css/normalize.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet" />
-  <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="css/normalize.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <script src="js/jquery-3.5.0.js" type="text/javascript"></script>
+  <link href="css/lightslider.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body class="body">
 
-  <header class="body__header header">
-    <div class="header__wrap">
-      <div class="header__wrap-desk">
-        <nav class="header__nav">
-          <div class="header__container">
-            <a class="header__logo-link" href="">
-              <picture>
-                <source media="(min-width:1200px)" srcset="img/logo-white-desktop.svg" width="140">
-                <source media="(min-width:660px)" srcset="img/logo-white-tablet.svg">
-                <img class="header__logo" src="/img/logo-white-mobile.svg" alt="логотип сайта Pink">
-              </picture>
-            </a>
-            <a class="header__menu-link" href=""><img class="header__menu" src="/img/menu-burger.svg"
-                alt="иконка закрыть меню" width="50" height="24"></a>
-          </div>
-          <ul class="header__nav-list nav-list">
-            <li class="nav-list__item"><a class="nav-list__link" href="">Главная</a></li>
-            <li class="nav-list__item"><a class="nav-list__link" href="photo.html">Фотографии</a></li>
-            <li class="nav-list__item"><a class="nav-list__link" href="form.html">Конкурс</a></li>
-            <li class="nav-list__item"><a class="nav-list__link" href="">HTML Academy</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="header__width">
-        <h1 class="header__title">Взгляните на жизнь иначе!</h1>
-      </div>
-  </header>
-  <main class="body__index">
-    <section class="body__availability availability">
-      <div class="availability__wrap">
-        <a class="availability__link" href="">Скачать приложение</a>
-        <ul class="availability__platforms platforms-list">
-          <li class="platforms-list__item"><a class="platforms-list__link" href=""><img class="platforms-list__img"
-                src="/img/apple-logo.svg" alt="логотип apple" width="47" height="56"></li></a>
-          <li class="platforms-list__item"><a class="platforms-list__link" href=""><img class="platforms-list__img"
-                src="/img/android-logo.svg" alt="логотип андроид" width="43" height="47"></a></li>
-          <li class="platforms-list__item"><a class="platforms-list__link" href=""><img class="platforms-list__img"
-                src="/img/microsoft-logo.svg" alt="логотип windows" width="44" height="41"></a></li>
-        </ul>
-        <p class="availability__access">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
-    </section>
-    <section class="body__advantages advantages">
-      <div class="advantages__container">
-        <p class="advantages__question">Устали от серости мегаполиса?</p>
-        <p class="advantages__answer">Нам есть, что вам предложить!</p>
-      </div>
-      <div class="advantages__wrap">
-        <ul class="advantages__help-list help-list">
-          <li class="help-list__item">
-            <p class="help-list__heading">Поднимает настроение</p>
-            <p class="help-list__detail">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-              несколько
-              кликов!</p>
-          </li>
-          <li class="help-list__item">
-            <p class="help-list__heading">Меняет мир вокруг</p>
-            <p class="help-list__detail">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-              эффект</p>
-          </li>
-          <li class="help-list__item">
-            <p class="help-list__heading">Заводит новых друзей</p>
-            <p class="help-list__detail">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-            </p>
-          </li>
-        </ul>
-        <div class="advantages__wrap-img">
-          <img class="advantages__phone advantages__phone--hidden" src="img/iphone-screen-desktop-1@1x.png"
-            alt="черно-белая мусорка">
-          <img class="advantages__phone advantages__phone--hidden" src="img/iphone-screen-desktop-2@1x.png"
-            alt="розовая мусорка">
-          <picture>
-            <source media="(min-width:1200px)" srcset="img/iphone-screen-desktop-3@1x.png">
-            <source media="(min-width:660px)" srcset="img/iphone-screen-tablet-3@1x.png">
-            <img class="advantages__phone" src="/img/iphone_screen.png" alt="телефон с смайликом">
-          </picture>
+<header class="body__header header">
+  <div class="header__wrap">
+    <div class="header__wrap-desk">
+      <nav class="header__nav">
+        <div class="header__container">
+          <a class="header__logo-link header__logo-link--inactive" href="">
+            <svg aria-label="логотип сайта Pink" class="header__logo header__logo--desktop" height="40" width="147">
+              <use xlink:href="img/sprite.svg#sp-logo-white-desktop"></use>
+            </svg>
+            <svg aria-label="логотип сайта Pink" class="header__logo header__logo--tablet" height="40" width="147">
+              <use xlink:href="img/sprite.svg#sp-logo-white-tablet"></use>
+            </svg>
+            <svg aria-label="логотип сайта Pink" class="header__logo" height="22" width="75">
+              <use xlink:href="img/sprite.svg#sp-logo-white-mobile"></use>
+            </svg>
+          </a>
+          <a class="header__menu-link header__menu-link--menu" href="form.html">
+            <svg aria-label="меню" class="header__menu" height="24" width="50">
+              <use xlink:href="img/sprite.svg#sp-menu-burger"></use>
+            </svg>
+          </a>
+          <a class="header__menu-link header__menu-link--close" href="form.html">
+            <svg aria-label="закрыть меню" class="header__close" height="23" width="24">
+              <use xlink:href="img/sprite.svg#sp-menu-cross"></use>
+            </svg>
+          </a>
         </div>
-      </div>
-    </section>
-    <section class="body__time time">
-      <div class="time__container">
+        <ul class="header__nav-list nav-list">
+          <li class="nav-list__item nav-list__item--active"><a class="nav-list__link" href="">Главная</a></li>
+          <li class="nav-list__item"><a class="nav-list__link" href="photo.html">Фотографии</a></li>
+          <li class="nav-list__item"><a class="nav-list__link" href="form.html">Конкурс</a></li>
+          <li class="nav-list__item"><a class="nav-list__link" href="">HTML Academy</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__width">
+      <h1 class="header__title">Взгляните на жизнь иначе!</h1>
+      <picture>
+        <source media="(min-width:1200px)" srcset="img/iphone-hand-desktop@1x.png">
+        <source media="(min-width:660px)" srcset="img/iphone-hand-tablet@1x.png">
+        <img alt="рука с телефоном" class="header__img" src="img/iphone-hand-mobile.png">
+      </picture>
+    </div>
+  </div>
+</header>
+<main class="body__index">
+  <section class="body__availability availability">
+    <div class="availability__wrap">
+      <a class="availability__link" href="">Скачать приложение</a>
+      <ul class="availability__platforms platforms-list">
+        <li class="platforms-list__item"><a class="platforms-list__link" href=""><img alt="логотип apple"
+                                                                                      class="platforms-list__img"
+                                                                                      height="56" src="img/apple-logo.svg"
+                                                                                      width="47"></a></li>
+        <li class="platforms-list__item"><a class="platforms-list__link" href=""><img alt="логотип андроид"
+                                                                                      class="platforms-list__img"
+                                                                                      height="47" src="img/android-logo.svg"
+                                                                                      width="43"></a></li>
+        <li class="platforms-list__item"><a class="platforms-list__link" href=""><img alt="логотип windows"
+                                                                                      class="platforms-list__img"
+                                                                                      height="41" src="img/microsoft-logo.svg"
+                                                                                      width="44"></a></li>
+      </ul>
+      <p class="availability__access">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </div>
+  </section>
+  <section class="body__advantages advantages">
+    <div class="advantages__container">
+      <p class="advantages__question">Устали от серости мегаполиса?</p>
+      <p class="advantages__answer">Нам есть, что вам предложить!</p>
+    </div>
+    <div class="advantages__wrap">
+      <ul class="advantages__help-list help-list">
+        <li class="help-list__item">
+          <p class="help-list__heading">Поднимает настроение</p>
+          <p class="help-list__detail">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+            несколько
+            кликов!</p>
+        </li>
+        <li class="help-list__item">
+          <p class="help-list__heading">Меняет мир вокруг</p>
+          <p class="help-list__detail">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+            эффект</p>
+        </li>
+        <li class="help-list__item">
+          <p class="help-list__heading">Заводит новых друзей</p>
+          <p class="help-list__detail">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </p>
+        </li>
+      </ul>
+      <div class="advantages__wrap-img">
+        <img alt="черно-белая мусорка" class="advantages__phone advantages__phone--hidden"
+             src="img/iphone-screen-desktop-1@1x.png">
+        <img alt="розовая мусорка" class="advantages__phone advantages__phone--hidden"
+             src="img/iphone-screen-desktop-2@1x.png">
         <picture>
-          <source media="(min-width:1200px)" srcset="img/timer-desktop.png">
-          <img class="time__img" src="/img/timer.png" alt="таймер на сутки">
+          <source media="(min-width:1200px)" srcset="img/iphone-screen-desktop-3@1x.png">
+          <source media="(min-width:660px)" srcset="img/iphone-screen-tablet-3@1x.png">
+          <img alt="телефон с смайликом" class="advantages__phone" src="img/iphone_screen.png">
         </picture>
-        <div class="time__wrap">
-          <p class="time__title">Эффект на 24 часа!</p>
-          <p class="time__word">Британские ученые провели исследования и доказали, что положительный эффект от
-            использования приложения длится целые сутки!</p>
-          <a class="time__link" href="">Узнать больше об исследовании</a>
-        </div>
-      </div>
-    </section>
-    <section class="body__slider slider">
-      <img class="slider__previous" src="/img/review-arrow-left.svg" alt="переход на предыдущий слайд">
-      <div class="slider__slide slider__slide--checked">
-        <p class="slider__about">25 лет, водитель трамвая</p>
-        <p class="slider__name">Николай Петров</p>
-        <p class="slider__message">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
-          серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-      </div>
-      <img class="slider__next" src="/img/review-arrow-right.svg" alt="переход на следующий слайд">
-      <ul class="slider__switch switch">
-        <li class="switch__item switch__item--check"></li>
-        <li class="switch__item"></li>
-        <li class="switch__item"></li>
-      </ul>
-    </section>
-    <section class="body__price price">
-      <div class="price__wrap-table">
-        <table class="price__table">
-          <tr class="price__heading">
-            <th class="price__heading-tablet"></th>
-            <th class="price__heading-th">
-              <p class="price__name">База</p>
-              <p class="price__number">1,99 USD</p>
-            </th>
-            <th class="price__heading-th price__heading-th--hit">
-              <p class="price__name">Стандарт</p>
-              <p class="price__number">3,99 USD</p>
-            </th>
-            <th class="price__heading-th">
-              <p class="price__name">АНЛИМ</p>
-              <p class="price__number">9,99 USD</p>
-            </th>
-          </tr>
-          <tr class="price__row">
-            <th class="price__availability price__availability--left">
-              <p class="price__tablet">Розовый фильтр</p>
-            </th>
-            <th class="price__availability">
-              <p class="price__mobile">Розовый фильтр</p>
-              <img class="price__option" src="/img/icon-yes.svg" alt="да" width="31" height="21">
-            </th>
-            <th class="price__availability">
-              <p class="price__mobile">Розовый фильтр</p>
-              <img class="price__option" src="/img/icon-yes.svg" alt="да" width="31" height="21">
-            </th>
-            <th class="price__availability">
-              <p class="price__mobile">Розовый фильтр</p>
-              <img class="price__option" src="/img/icon-yes.svg" alt="да" width="31" height="21">
-            </th>
-          </tr>
-          <tr class="price__row">
-            <th class="price__availability price__availability--left">
-              <p class="price__tablet">Смайлики</p>
-            </th>
-            <th class="price__availability">
-              <p class="price__mobile">Смайлики</p>
-              <img class="price__option" src="/img/icon-no.svg" alt="нет" width="27" height="26">
-            </th>
-            <th class="price__availability">
-              <p class="price__mobile">Смайлики</p>
-              <img class="price__option" src="/img/icon-yes.svg" alt="да" width="31" height="21">
-            </th>
-            <th class="price__availability">
-              <p class="price__mobile">Смайлики</p>
-              <img class="price__option" src="/img/icon-yes.svg" alt="да" width="31" height="21">
-            </th>
-          </tr>
-          <tr class="price__row">
-            <th class="price__availability price__availability--left">
-              <p class="price__tablet">Комментарии</p>
-            </th>
-            <th class="price__availability">
-              <p class="price__mobile">Комментарии</p>
-              <img class="price__option" src="/img/icon-no.svg" alt="нет" width="27" height="26">
-            </th>
-            <th class="price__availability">
-              <p class="price__mobile">Комментарии</p>
-              <img class="price__option" src="/img/icon-no.svg" alt="нет" width="27" height="26">
-            </th>
-            <th class="price__availability">
-              <p class="price__mobile">Комментарии</p>
-              <img class="price__option" src="/img/icon-yes.svg" alt="да" width="31" height="21">
-            </th>
-          </tr>
-        </table>
-
-      </div>
-      <ul class="price__switch-price switch-price">
-        <li class="switch-price__item"></li>
-        <li class="switch-price__item switch-price__item--check"></li>
-        <li class="switch-price__item"></li>
-      </ul>
-    </section>
-  </main>
-  <footer class="body__footer-index footer-index">
-    <div class="footer-index__wrapper">
-      <p class="footer-index__question">Остались вопросы? Свяжитесь с нами!</p>
-      <div class="footer-index__wrap">
-        <div class="footer-index__container">
-          <p class="footer-index__text">Звоните:</p>
-          <a class="footer-index__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
-        </div>
-        <div class="footer-index__container">
-          <p class="footer-index__text">Пишите:</p>
-          <a class="footer-index__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-        <div class="footer-index__container">
-          <p class="footer-index__text">Приезжайте в гости:</p>
-          <p class="footer-index__link footer-index__link--adress">ул. Большая<br> Конюшенная, 19/8</p>
-        </div>
       </div>
     </div>
-    <div class="footer-index__triangle"></div>
-    <picture>
-      <source media="(min-width:1200px)" srcset="/img/map-desktop.png">
-      <source media="(min-width:660px)" srcset="/img/bg-map-tablet.jpg">
-      <img class="footer-index__map" src="/img/bg-map-mobile.jpg"
-        alt="мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, 19/8" width="700" height="848">
-    </picture>
-    <div class="footer-index__container-add">
-      <div class="footer-index__background">
-        <a class="footer-index__link-add" href=""><img class="footer__img" src="/img/logo-blue-tablet.svg"
-            alt="логотип pink" width="147" height="40"></a>
-        <ul class="footer-index___social-list social-list">
-          <li class="social-list__item"><a class="social-list__link" href=""><img class="social-list__img"
-                src="/img/twitter.svg" alt="ссылка в твиттере" width="18" height="14"></a></li>
-          <li class="social-list__item"><a class="social-list__link" href=""><img class="social-list__img"
-                src="/img/facebook.svg" alt="ссылка в фейсбуке" width="9" height="18"></a></li>
-          <li class="social-list__item"><a class="social-list__link" href=""><img class="social-list__img"
-                src="/img/youtube.svg" alt="ссылка в ютубе" width="15" height="13"></a></li>
-        </ul>
-        <div class="footer-index__container-add2">
-          <p class="footer-index___academy">Разработано</p>
-          <a class="footer-index___acadmey-link" href=""><img class="footer__academy-img" src="/img/htmlacademy.svg"
-              alt="логотип HTML академии" width="27" height="34"></a>
-        </div>
+  </section>
+  <section class="body__time time">
+    <div class="time__container">
+      <picture>
+        <source media="(min-width:1200px)" srcset="img/timer-desktop.png">
+        <img alt="таймер на сутки" class="time__img" src="img/timer.png">
+      </picture>
+      <div class="time__wrap">
+        <p class="time__title">Эффект на 24 часа!</p>
+        <p class="time__word">Британские ученые провели исследования и доказали, что положительный эффект от
+          использования приложения длится целые сутки!</p>
+        <a class="time__link" href="">Узнать больше об исследовании</a>
       </div>
     </div>
-  </footer>
+  </section>
+  <section class="body__slider slider">
+    <!--<img class="slider__previous slider__control" id="leftControl" src="img/review-arrow-left.svg"
+      alt="переход на предыдущий слайд">-->
+    <div class="slider__wrap">
+      <ul class="slider-container" id="lightSlider">
+        <li class="slider__slide  slider__slide--1">
+          <p class="slider__about">25 лет, водитель трамвая</p>
+          <p class="slider__name">Николай Петров</p>
+          <p class="slider__message">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+            серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </li>
+        <li class="slider__slide slider__slide--2">
+          <p class="slider__about">25 лет, водитель трамвая</p>
+          <p class="slider__name">Николай Петров2</p>
+          <p class="slider__message">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+            серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </li>
+        <li class="slider__slide slider__slide--3">
+          <p class="slider__about">25 лет, водитель трамвая</p>
+          <p class="slider__name">Николай Петров3</p>
+          <p class="slider__message">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+            серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </li>
+      </ul>
+    </div>
+    <!--<img class="slider__next slider__control" id="rightControl" src="img/review-arrow-right.svg"
+      alt="переход на следующий слайд">-->
+    <ul class="slider__switch switch">
+      <li class="switch__item switch__item--one switch__item--check"></li>
+      <li class="switch__item switch__item--two"></li>
+      <li class="switch__item switch__item--three"></li>
+    </ul>
+  </section>
+  <section class="body__price price">
+    <div class="price__wrap-table">
+      <table class="price__table">
+        <tr class="price__heading">
+          <th class="price__heading-tablet"></th>
+          <th class="price__heading-th">
+            <p class="price__name">База</p>
+            <p class="price__number">1,99 USD</p>
+          </th>
+          <th class="price__heading-th price__heading-th--hit">
+            <p class="price__name">Стандарт</p>
+            <p class="price__number">3,99 USD</p>
+          </th>
+          <th class="price__heading-th">
+            <p class="price__name">АНЛИМ</p>
+            <p class="price__number">9,99 USD</p>
+          </th>
+        </tr>
+        <tr class="price__row">
+          <th class="price__availability price__availability--left">
+            <p class="price__tablet">Розовый фильтр</p>
+          </th>
+          <th class="price__availability">
+            <p class="price__mobile">Розовый фильтр</p>
+            <img alt="да" class="price__option" height="21" src="img/icon-yes.svg" width="31">
+          </th>
+          <th class="price__availability">
+            <p class="price__mobile">Розовый фильтр</p>
+            <img alt="да" class="price__option" height="21" src="img/icon-yes.svg" width="31">
+          </th>
+          <th class="price__availability">
+            <p class="price__mobile">Розовый фильтр</p>
+            <img alt="да" class="price__option" height="21" src="img/icon-yes.svg" width="31">
+          </th>
+        </tr>
+        <tr class="price__row">
+          <th class="price__availability price__availability--left">
+            <p class="price__tablet">Смайлики</p>
+          </th>
+          <th class="price__availability">
+            <p class="price__mobile">Смайлики</p>
+            <img alt="нет" class="price__option" height="26" src="img/icon-no.svg" width="27">
+          </th>
+          <th class="price__availability">
+            <p class="price__mobile">Смайлики</p>
+            <img alt="да" class="price__option" height="21" src="img/icon-yes.svg" width="31">
+          </th>
+          <th class="price__availability">
+            <p class="price__mobile">Смайлики</p>
+            <img alt="да" class="price__option" height="21" src="img/icon-yes.svg" width="31">
+          </th>
+        </tr>
+        <tr class="price__row">
+          <th class="price__availability price__availability--left">
+            <p class="price__tablet">Комментарии</p>
+          </th>
+          <th class="price__availability">
+            <p class="price__mobile">Комментарии</p>
+            <img alt="нет" class="price__option" height="26" src="img/icon-no.svg" width="27">
+          </th>
+          <th class="price__availability">
+            <p class="price__mobile">Комментарии</p>
+            <img alt="нет" class="price__option" height="26" src="img/icon-no.svg" width="27">
+          </th>
+          <th class="price__availability">
+            <p class="price__mobile">Комментарии</p>
+            <img alt="да" class="price__option" height="21" src="img/icon-yes.svg" width="31">
+          </th>
+        </tr>
+      </table>
 
-  <!--<script src="/js/form.js"></script>-->
+    </div>
+    <ul class="price__switch-price switch-price">
+      <li class="switch-price__item switch-price__item--one"></li>
+      <li class="switch-price__item switch-price__item--two switch-price__item--check"></li>
+      <li class="switch-price__item switch-price__item--three"></li>
+    </ul>
+  </section>
+</main>
+<footer class="body__footer-index footer-index">
+  <div class="footer-index__wrapper">
+    <p class="footer-index__question">Остались вопросы? Свяжитесь с нами!</p>
+    <div class="footer-index__wrap">
+      <div class="footer-index__container">
+        <p class="footer-index__text">Звоните:</p>
+        <a class="footer-index__link footer-index__link--telephone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+      </div>
+      <div class="footer-index__container">
+        <p class="footer-index__text">Пишите:</p>
+        <a class="footer-index__link footer-index__link--mail"
+           href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </div>
+      <div class="footer-index__container">
+        <p class="footer-index__text">Приезжайте в гости:</p>
+        <p class="footer-index__link footer-index__link--adress">ул. Большая<br> Конюшенная, 19/8</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-index__triangle"></div>
+  <iframe allowfullscreen=""
+          aria-hidden="false"
+          class="footer-index__google-map" frameborder="0" height="450"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003003!2d30.320858716211177!3d59.938719169054096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1587227886088!5m2!1sru!2sru" style="border: 0;" tabindex="0"
+          width="600"></iframe>
+  <picture>
+    <source media="(min-width:1200px)" srcset="img/map-desktop.png">
+    <source media="(min-width:660px)" srcset="img/bg-map-tablet.jpg">
+    <img alt="мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, 19/8" class="footer-index__map"
+         height="848" src="img/bg-map-mobile.jpg" width="700">
+  </picture>
+  <div class="footer-index__container-add">
+    <div class="footer-index__background">
+      <a class="footer-index__link-add footer-index__link-add--inactive" href="">
+        <svg aria-label="логотип сайта Pink" class="footer__img" height="40" width="147">
+          <use xlink:href="img/sprite.svg#sp-logo-blue-tablet"></use>
+        </svg>
+        <svg aria-label="логотип сайта Pink" class="footer__img footer__img--desktop" height="40" width="147">
+          <use xlink:href="img/sprite.svg#sp-logo-blue-desktop"></use>
+        </svg>
+      </a>
+      <ul class="footer-index___social-list social-list">
+        <li class="social-list__item"><a class="social-list__link" href=""><img alt="ссылка в твиттере"
+                                                                                class="social-list__img"
+                                                                                height="14" src="img/twitter.svg"
+                                                                                width="18"></a></li>
+        <li class="social-list__item"><a class="social-list__link" href=""><img alt="ссылка в фейсбуке"
+                                                                                class="social-list__img"
+                                                                                height="18" src="img/facebook.svg"
+                                                                                width="9"></a></li>
+        <li class="social-list__item"><a class="social-list__link" href=""><img alt="ссылка в ютубе"
+                                                                                class="social-list__img"
+                                                                                height="13" src="img/youtube.svg"
+                                                                                width="15"></a></li>
+      </ul>
+      <div class="footer-index__container-add2">
+        <p class="footer-index___academy">Разработано</p>
+        <a class="footer-index___acadmey-link" href="">
+          <svg aria-label="логотип HTML академии" class="footer__academy-img" height="34" width="27">
+            <use xlink:href="img/sprite.svg#sp-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/menu.js"></script>
+<script src="js/lightslider.js"></script>
 </body>
 
 </html>

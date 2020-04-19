@@ -29,6 +29,16 @@
     top: -5px;
     left: -62px;
   }
+
+  &:hover::before,
+  &:focus::before {
+    border: 2px solid #283645;
+    transition: 0.3s;
+  }
+
+  &:active::before {
+    border: 2px solid #d22856;
+  }
 }
 
 .radio__input:checked + .radio__label::after {
@@ -38,7 +48,7 @@
   height: 15px;
   background-color: #d22856;
   border-radius: 50%;
-  top: 8px;
+  top: 7px;
   left: -50px;
 }
 

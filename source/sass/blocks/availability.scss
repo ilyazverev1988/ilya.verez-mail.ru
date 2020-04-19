@@ -32,6 +32,19 @@
   padding-top: 14px;
   box-sizing: border-box;
   margin: 0 auto;
+
+  &:focus,
+  &:hover {
+    transition: 0.3s;
+    background-color: #ffffff;
+    color: #d22856;
+  }
+
+  &:active {
+    transition: 0.3s;
+    background-color: #ffffff;
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .availability__platforms {

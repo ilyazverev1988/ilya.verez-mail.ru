@@ -39,6 +39,23 @@
 .list-photo__item {
   margin-bottom: 20px;
   background-color: white;
+  position: relative;
+
+  &--panorama::before {
+    position: absolute;
+    content: "Панорама дня";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    width: 140px;
+    height: 36px;
+    background-color: #d22856;
+    top: 0;
+    left: 50%;
+    margin-left: 5px;
+    color: #ffffff;
+  }
 }
 
 .list-photo__like {
@@ -142,6 +159,11 @@
   .list-photo__item {
     width: 50%;
 
+    &--panorama::before {
+      top: 56px;
+      margin-left: 155px;
+    }
+
     &:nth-child(2n) {
       margin-right: 0;
     }
@@ -179,6 +201,11 @@
     &--panorama {
       width: 100%;
       margin-right: 0;
+    }
+
+    &--panorama::before {
+      top: 98px;
+      margin-left: 365px;
     }
 
     &:nth-child(3n) {

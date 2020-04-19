@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="css/normalize.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
-  <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
-</head>
+  <script type="text/javascript" src="js/jquery-3.5.0.js"></script>
 
 <body class="body">
   <header class="body__header-photo header-photo">
@@ -16,27 +15,40 @@
       <div class="header-photo__wrap-desk">
         <nav class="header-photo__nav">
           <div class="header__container">
-            <a class="header-photo__logo-link" href="">
-              <picture>
-                <source media="(min-width:1200px)" srcset="img/logo-white-desktop.svg">
-                <source media="(min-width:660px)" srcset="img/logo-white-tablet.svg">
-                <img class="header-photo__logo" src="/img/logo-white-mobile.svg" alt="логотип сайта Pink">
-              </picture>
+            <a class="header__logo-link" href="index.html">
+              <svg class="header__logo header__logo--desktop" width="147" height="40" aria-label="логотип сайта Pink">
+                <use xlink:href="img/sprite.svg#sp-logo-white-desktop"></use>
+              </svg>
+              <svg class="header__logo header__logo--tablet" width="147" height="40" aria-label="логотип сайта Pink">
+                <use xlink:href="img/sprite.svg#sp-logo-white-tablet"></use>
+              </svg>
+              <svg class="header__logo" width="75" height="22" aria-label="логотип сайта Pink">
+                <use xlink:href="img/sprite.svg#sp-logo-white-mobile"></use>
+              </svg>
             </a>
-            <a class="header-photo__menu-link" href=""><img class="header__menu" src="/img/menu-burger.svg"
-                alt="иконка закрыть меню" width="50" height="24"></a>
+            <a class="header__menu-link header__menu-link--menu" href="form.html">
+              <svg class="header__menu" width="50" height="24" aria-label="меню">
+                <use xlink:href="img/sprite.svg#sp-menu-burger"></use>
+              </svg>
+            </a>
+            <a class="header__menu-link header__menu-link--close" href="form.html">
+              <svg class="header__close" width="24" height="23" aria-label="закрыть меню">
+                <use xlink:href="img/sprite.svg#sp-menu-cross"></use>
+              </svg>
+            </a>
           </div>
           <ul class="header-photo__nav-list nav-list">
             <li class="nav-list__item"><a class="nav-list__link" href="index.html">Главная</a></li>
-            <li class="nav-list__item"><a class="nav-list__link" href="">Фотографии</a></li>
+            <li class="nav-list__item nav-list__item--active"><a class="nav-list__link" href="">Фотографии</a></li>
             <li class="nav-list__item"><a class="nav-list__link" href="form.html">Конкурс</a></li>
             <li class="nav-list__item"><a class="nav-list__link" href="">HTML Academy</a></li>
           </ul>
         </nav>
       </div>
-      <div class="header-photo__width">
-        <h1 class="header-photo__title">Фотографии пользователей</h1>
-      </div>
+    </div>
+    <div class="header-photo__width">
+      <h1 class="header-photo__title">Фотографии пользователей</h1>
+    </div>
   </header>
   <main class="body__photo">
     <section class="body__photos photos">
@@ -47,7 +59,7 @@
           <picture>
             <source media="(min-width:1200px)" srcset="img/panorama-desktop@1x.jpg">
             <source media="(min-width:660px)" srcset="img/panorama-tablet@1x.jpg">
-            <img class="list-photo__img list-photo__img--panorama" src="/img/panorama-mobile@1x.jpg" alt="вид с вышки">
+            <img class="list-photo__img list-photo__img--panorama" src="img/panorama-mobile@1x.jpg" alt="вид с вышки">
           </picture>
           <div class="list-photo__container">
             <div class="list-photo__wrap">
@@ -66,7 +78,7 @@
           <picture>
             <source media="(min-width:1200px)" srcset="img/photo-1-desktop@1x.jpg">
             <source media="(min-width:660px)" srcset="img/photo-1-tablet@1x.jpg">
-            <img class="list-photo__img" src="/img/photo-1-mobile@1x.jpg" alt="авто" width="280" height="180">
+            <img class="list-photo__img" src="img/photo-1-mobile@1x.jpg" alt="авто" width="280" height="180">
           </picture>
           <div class="list-photo__container">
             <div class="list-photo__wrap">
@@ -84,7 +96,7 @@
           <picture>
             <source media="(min-width:1200px)" srcset="img/photo-2-desktop@1x.jpg">
             <source media="(min-width:660px)" srcset="img/photo-2-tablet@1x.jpg">
-            <img class="list-photo__img" src="/img/photo-2-mobile@1x.jpg" alt="ударная установка" width="280"
+            <img class="list-photo__img" src="img/photo-2-mobile@1x.jpg" alt="ударная установка" width="280"
               height="180">
           </picture>
           <div class="list-photo__container">
@@ -103,7 +115,7 @@
           <picture>
             <source media="(min-width:1200px)" srcset="img/photo-3-desktop@1x.jpg">
             <source media="(min-width:660px)" srcset="img/photo-3-tablet@1x.jpg">
-            <img class="list-photo__img" src="/img/photo-3-mobile@1x.jpg" alt="вид из окна" width="280" height="180">
+            <img class="list-photo__img" src="img/photo-3-mobile@1x.jpg" alt="вид из окна" width="280" height="180">
           </picture>
           <div class="list-photo__container">
             <div class="list-photo__wrap">
@@ -121,8 +133,7 @@
           <picture>
             <source media="(min-width:1200px)" srcset="img/photo-4-desktop@1x.jpg">
             <source media="(min-width:660px)" srcset="img/photo-4-tablet@1x.jpg">
-            <img class="list-photo__img" src="/img/photo-4-mobile@1x.jpg" alt="кубанская бахча" width="280"
-              height="180">
+            <img class="list-photo__img" src="img/photo-4-mobile@1x.jpg" alt="кубанская бахча" width="280" height="180">
           </picture>
           <div class="list-photo__container">
             <div class="list-photo__wrap">
@@ -140,7 +151,7 @@
           <picture>
             <source media="(min-width:1200px)" srcset="img/photo-5-desktop@1x.jpg">
             <source media="(min-width:660px)" srcset="img/photo-5-tablet@1x.jpg">
-            <img class="list-photo__img" src="/img/photo-5-mobile@1x.jpg" alt="вид с горы" width="280" height="180">
+            <img class="list-photo__img" src="img/photo-5-mobile@1x.jpg" alt="вид с горы" width="280" height="180">
           </picture>
           <div class="list-photo__container">
             <div class="list-photo__wrap">
@@ -158,7 +169,7 @@
           <picture>
             <source media="(min-width:1200px)" srcset="img/photo-6-desktop@1x.jpg">
             <source media="(min-width:660px)" srcset="img/photo-6-tablet@1x.jpg">
-            <img class="list-photo__img" src="/img/photo-6-mobile@1x.jpg" alt="крыло самолета" width="280" height="180">
+            <img class="list-photo__img" src="img/photo-6-mobile@1x.jpg" alt="крыло самолета" width="280" height="180">
           </picture>
           <div class="list-photo__container">
             <div class="list-photo__wrap">
@@ -179,38 +190,31 @@
       <div class="filter__background-tablet">
         <picture>
           <source media="(min-width:660px)" srcset="img/photo-editor-tablet@1x.jpg">
-          <img class="filter__img" src="/img/photo-editor-mobile@1x.jpg" alt="зимняя дорога">
+          <img class="filter__img" src="img/photo-editor-mobile@1x.jpg" alt="зимняя дорога">
         </picture>
         <div class="filter__wrap-tablet">
           <ul class="filter__variant variant">
             <li class="variant__item">
-              <img class="variant__img variant__img--crop" src="/img/crop-icon.svg" alt="обрезка" width="44"
-                height="44">
-              <div class="variant__container">
-                <div class="variant__line"></div>
-                <img class="variant__img-point variant__img-point--crop" src="/img/slider.png" alt="ползунок">
-              </div>
-            </li>
-            <li class="variant__item"><img class="variant__img variant__img--fill" src="/img/fill-icon.svg"
-                alt="заливка" width="48" height="43">
-              <div class="variant__container">
-                <div class="variant__line"></div>
-                <img class="variant__img-point variant__img-point--fill" src="/img/slider.png" alt="ползунок">
-              </div>
+              <svg class="variant__img variant__img--crop variant__img--active" width="44" height="44"
+                aria-label="обрезка">
+                <use xlink:href="img/sprite.svg#sp-crop-icon"></use>
+              </svg>
+              <input class="variant__input variant__input--crop" type="range" min="0" max="100" step="1" value="80">
             </li>
             <li class="variant__item">
-              <img class="variant__img variant__img--contrast" src="/img/contrast-icon.svg" alt="контраст" width="32"
-                height="32">
-              <div class="variant__container">
-                <div class="variant__line"></div>
-                <img class="variant__img-point variant__img-point--contrast" src="/img/slider.png" alt="ползунок">
-              </div>
+              <svg class="variant__img variant__img--fill" width="48" height="43" aria-label="заливка">
+                <use xlink:href="img/sprite.svg#sp-fill-icon"></use>
+              </svg>
+              <input class="variant__input variant__input--fill" type="range" min="0" max="100" step="1" value="20">
+            </li>
+            <li class="variant__item">
+              <svg class="variant__img variant__img--contrast" width="32" height="32" aria-label="контраст">
+                <use xlink:href="img/sprite.svg#sp-contrast-icon"></use>
+              </svg>
+              <input class="variant__input variant__input--contrast" type="range" min="0" max="100" step="1" value="50">
             </li>
           </ul>
-          <div class="filter__container">
-            <div class="filter__line"></div>
-            <img class="filter__img-point" src="/img/slider.png" alt="ползунок">
-          </div>
+          <input class="variant__common" id="common" type="range" min="0" max="100" step="1" value="80" name="common">
           <div class="filter__container-button">
             <button class="filter__submit">Запостить</button>
             <button class="filter__cancel">Отмена</button>
@@ -220,24 +224,33 @@
     </section>
   </main>
   <footer class="body__footer footer">
-    <a class="footer__link" href=""><img class="footer__img" src="/img/logo-blue-tablet.svg" alt="логотип pink"
-        width="147" height="40"></a>
+    <a class="footer__link" href="index.html">
+      <svg class="footer__img" width="147" height="40" aria-label="логотип сайта Pink">
+        <use xlink:href="img/sprite.svg#sp-logo-blue-tablet"></use>
+      </svg>
+      <svg class="footer__img footer__img--desktop" width="147" height="40" aria-label="логотип сайта Pink">
+        <use xlink:href="img/sprite.svg#sp-logo-blue-desktop"></use>
+      </svg>
+    </a>
     <ul class="footer__social-list social-list">
       <li class="social-list__item"><a class="social-list__link" href=""><img class="social-list__img"
-            src="/img/twitter.svg" alt="ссылка в твиттере" width="18" height="14"></a></li>
+            src="img/twitter.svg" alt="ссылка в твиттере" width="18" height="14"></a></li>
       <li class="social-list__item"><a class="social-list__link" href=""><img class="social-list__img"
-            src="/img/facebook.svg" alt="ссылка в фейсбуке" width="9" height="18"></a></li>
+            src="img/facebook.svg" alt="ссылка в фейсбуке" width="9" height="18"></a></li>
       <li class="social-list__item"><a class="social-list__link" href=""><img class="social-list__img"
-            src="/img/youtube.svg" alt="ссылка в ютубе" width="15" height="13"></a></li>
+            src="img/youtube.svg" alt="ссылка в ютубе" width="15" height="13"></a></li>
     </ul>
     <div class="footer__container">
       <p class="footer__academy">Разработано</p>
-      <a class="footer__acadmey-link" href=""><img class="footer__academy-img" src="/img/htmlacademy.svg"
-          alt="логотип HTML академии" width="27" height="34"></a>
+      <a class="footer__acadmey-link" href="">
+        <svg class="footer__academy-img" width="27" height="34" aria-label="логотип HTML академии">
+          <use xlink:href="img/sprite.svg#sp-htmlacademy"></use>
+        </svg>
+      </a>
     </div>
   </footer>
 
-  <!--<script src="/js/form.js"></script>-->
+  <script src="js/menu-photo.js"></script>
 </body>
 
 </html>

@@ -8,8 +8,10 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var wait = require("gulp-wait");
+var svgstore = require("gulp-svgstore");
+var rename = require("gulp-rename");
 
-gulp.task("css", function() {
+gulp.task("css", function () {
   return gulp
     .src("source/sass/style.scss")
     .pipe(plumber())
@@ -22,13 +24,25 @@ gulp.task("css", function() {
     .pipe(server.stream());
 });
 
-gulp.task("server", function() {
+gulp.task("sprite", function () {
+  return gulp
+    .src("source/img/sp-*.svg")
+    .pipe(
+      svgstore({
+        inlineSvg: true,
+      })
+    )
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("server", function () {
   server.init({
     server: "source/",
     notify: false,
     open: true,
     cors: true,
-    ui: false
+    ui: false,
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));

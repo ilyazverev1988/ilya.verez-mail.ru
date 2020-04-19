@@ -1,8 +1,21 @@
-.social-list__item {
+.social-list__link {
   width: 45px;
   height: 45px;
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 50%;
+  display: block;
+
+  &:hover,
+  &:focus {
+    transition: 0.3s;
+    border: 3px solid #283645;
+  }
+
+  &:active {
+    transition: 0.3s;
+    border: 3px solid #283645;
+    opacity: 0.1;
+  }
 }
 
 .social-list__img {

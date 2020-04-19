@@ -1,16 +1,18 @@
 {
-  "name": "cat-energy-18",
+  "name": "pink",
   "version": "17.0.0",
   "private": true,
-  "description": "Личный проект «Кэт энерджи» от HTML Academy",
+  "description": "Личный проект «Pink» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
     "gulp": "4.0.x",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "2.6.x",
+    "gulp-svgstore": "^7.0.1",
     "stylelint": "10.1.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },

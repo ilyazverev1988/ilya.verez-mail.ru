@@ -1,3 +1,24 @@
 .body__footer {
   text-align: center;
 }
+
+.body__header--menu {
+  background-color: #283645;
+  text-align: center;
+  background-image: url("../img/background-mobile@1x.jpg");
+  background-size: 700px auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/iphone-hand-mobile.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 258px;
+    height: 286px;
+    top: 183px;
+    margin-left: -125px;
+  }
+}
